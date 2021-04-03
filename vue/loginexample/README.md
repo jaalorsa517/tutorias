@@ -1,4 +1,5 @@
 # loginexample
+Proyecto para mostrar el uso de Vue, vue-router y maquetación html
 
 ## Project setup
 ```
