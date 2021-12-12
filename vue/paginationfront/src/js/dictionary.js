@@ -18,6 +18,6 @@ export default {
     dragon: "#7860E0",
     dark: "#7A5848",
     fairy: "#E79FE7",
-    undefined: "#000000",
+    undefined: "#2c3e50",
   },
 };
