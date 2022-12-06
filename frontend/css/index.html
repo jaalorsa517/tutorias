@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.scss" />
+    <title>Selectores CSS y metodologia BEM</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title d-flex-center">Bienvenidos</h1>
+      <section class="container">
+      <h2>Hoy aprenderemos de CSS y la metodología BEM</h2>
+        <p>
+          La idea de esta charla es mostrar la importancia de conocer el concepto de Especificidad en Css y de
+          la manera correcta de usar la metodologia BEM
+        </p>
+        <p>En ese orden de ideas, veremos</p>
+      </section>
+      <ul>
+        <li>
+          <h3>
+            <a href="/views/especificidad/especificidad.html">Especificidad</a>
+          </h3>
+          <section class="container">
+            <p>Es el concepto donde se da prioridad a los selectores de CSS.</p>
+            <p>
+              Como se sabe, en css se puede tener selectores de Etiqueta, Atributo, Clases, Identificador.
+              Adicionalmente, también se puede dar estilos en líneas y usar la palabra reservada !important.
+            </p>
+            <p>
+              Todo lo anterior, se le puede dar un valor numérico, para ilustrar como el DOM le da prioridad
+              al selector:
+            </p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Selector</th>
+                  <th>Valor numérico</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>!important</td>
+                  <td>10000</td>
+                </tr>
+                <tr>
+                  <td>Identificador</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Atributo</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Clase</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Etiqueta</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </li>
+        <li>
+          <h3>
+            <a href="/views/bem/bem.html">BEM</a>
+          </h3>
+          <section class="container">
+            <p>
+              Es una metodología que nos permite tener un código más limpio y ordenado, además de que nos
+              permite tener un código más escalable. También evita el problema común de sobrescritura de
+              estilos, ya que este permite tener nombres únicos para las clases.
+            </p>
+            <p>La estructura de BEM es Bloque-Elemento-Modificador.</p>
+          </section>
+        </li>
+      </ul>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

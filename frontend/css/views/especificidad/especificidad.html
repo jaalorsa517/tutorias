@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/views/especificidad/especificidad.scss" />
+    <title>CSS | Especificidad</title>
+  </head>
+  <body>
+    <main>
+     <h1 class="d-flex-center">Especificidad</h1>
+     <section class="container d-flex-center gap">
+      <button>Selector etiqueta</button>
+      <button class="btn-class" >Selector Clase</button>
+      <button button="">Selector atributo generico</button>
+      <button button="rojo">Selector atributo especifico</button>
+      <button id="btn-id" >Selector de identificador</button>
+      <button class="btn-class"  style="background-color:blueviolet">Estilo en linea</button>
+      <button id="btn-id-2">Important</button>
+     </section>
+    </main>
+  </body>
+</html>

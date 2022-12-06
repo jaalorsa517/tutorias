@@ -1,0 +1,33 @@
+@import "../../styles/shared.scss";
+
+.container [button ="rojo"]{
+  background-color: deeppink;
+}
+
+button.btn-class{
+  background-color: cadetblue;
+}
+
+#btn-id-2 {
+  background-color:  azure!important;
+}
+
+#btn-id {
+  background-color: coral;
+}
+
+[button] {
+  background-color: darkgreen;
+}
+
+[button="rojo"] {
+  background-color: red;
+}
+
+.btn-class {
+  background-color: chartreuse;
+}
+
+button {
+  background-color: aqua;
+}
