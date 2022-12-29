@@ -31,3 +31,4 @@ function showAnimal() {
     </div>
   </section>
 </template>
+<style></style>

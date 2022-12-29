@@ -1,13 +1,12 @@
 <script>
 import CardAnimal from "./CardAnimalOption.vue";
-import { animalsArr } from "../shared";
+import {useAnimals} from "../store/useAnimals"
 
-const _animalsRef = JSON.stringify(animalsArr);
 
 export default {
   components: { animal: CardAnimal },
   data: () => ({
-    animals: JSON.parse(_animalsRef),
+    animalsStore: useAnimals()
   }),
   mounted() {
     console.log("MOUNTED", this.$refs.animalref[0].$el);
@@ -18,10 +17,15 @@ export default {
 <template>
   <div>
     <h1 ref="title">OPTION API</h1>
+    <ul>
+    <li v-for="(animalName, key) in animalsStore.nameAnimals" :key="key" tag>
+    {{animalName}}
+    </li>
+    </ul>
     <animal
       class="inteOption"
       ref="animalref"
-      v-for="(animal, key) in animals"
+      v-for="(animal, key) in animalsStore.animals"
       :key="key"
       :animal="animal"
       :show="animal.show"

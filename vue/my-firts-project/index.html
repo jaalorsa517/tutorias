@@ -7,7 +7,14 @@
     <title>Vite + Vue</title>
   </head>
   <body>
-    <div id="app"></div>
+    <wc-animals id="app" msg="Estoy mandando un mensaje"></wc-animals>
     <script type="module" src="/src/main.js"></script>
+    <script>
+      const app = document.getElementById('app');
+      function showMsg(e){
+        alert(e.detail);
+      }
+      app.addEventListener('showMsg', showMsg);
+    </script>
   </body>
 </html>
